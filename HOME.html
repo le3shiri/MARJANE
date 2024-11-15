@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <nav class="nav">
+        <ul class="lista">
+                <li><img src=" /img/home.svg" width="25" style="filter: invert(18%) sepia(78%) saturate(3034%) hue-rotate(197deg) brightness(93%) contrast(101%);"></li>
+                <a href="HOME.html"><li><img  id="logo1" src=" /img/logo_marjane.svg"></li></a>
+                <li><img id="logo2" src=" /img/logo_marjane_market.svg"></li>
+                <li><div id="inp_sear">
+                    <img src=" /img/ser.svg" width="15" height="15">
+                    <input type="search" placeholder="Rechercher un  produit" >
+                </div></li>
+                <li><img src=" /img/carts.svg" style="filter: brightness(0) saturate(100%) invert(41%) sepia(6%) saturate(294%) hue-rotate(211deg) brightness(90%) contrast(79%);">Courses en ligne</li>
+                <li><img src=" /img/promo.svg" style="filter: brightness(0) saturate(100%) invert(41%) sepia(6%) saturate(294%) hue-rotate(211deg) brightness(90%) contrast(79%);">Promotions</li>
+                <li><img src=" /img/card.svg" style="filter: brightness(0) saturate(100%) invert(41%) sepia(6%) saturate(294%) hue-rotate(211deg) brightness(90%) contrast(79%);">Carte marjane</li>
+                <li><img src=" /img/group.svg">Groupe</li>
+                <li><img src=" /img/login.svg" width="25" style="filter: invert(18%) sepia(78%) saturate(3034%) hue-rotate(197deg) brightness(93%) contrast(101%);"></li>
+                <li><img src=" /img/cart.svg" width="25" style="filter: invert(18%) sepia(78%) saturate(3034%) hue-rotate(197deg) brightness(93%) contrast(101%);"></li>
+        </ul>
+</nav>
+<nav class="nav2">
+    <ul class="lista1">
+            <li style="flex: 1;"><img src=" /img/logo-marjane-mobile.webp" width="50"></li>
+            <li style="flex: 3;"><div id="inp_sear">
+                <img src=" /img/ser.svg" width="20" height="20" style="width: 10%;">
+                <input type="search" placeholder="Rechercher un  produit">
+                <button  style="width: 30%;"><img src=" /img/scaner.svg" alt="" width="20" height="20"></button>
+            </div></li>
+            <li style="flex: 1;display: flex;justify-content: flex-end;"><img src=" /img/cart.svg" width="25" style="filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(62deg) brightness(104%) contrast(104%);"></li>
+    </ul>
+    <ul class="lista2">
+        <li><img src=" /img/accueil.svg">Accueil</li>
+        <li><img src=" /img/carts.svg">Courses en ligne</li>
+        <li><img src=" /img/promo.svg">Promotions</li>
+        <li><img src=" /img/card.svg">Carte marjane</li>
+        <li><img src=" /img/menu.svg">Menu</li>
+</ul>
+</nav>
+      </div>
+      <div class="secend-container">
+        <div class="main-slide">
+          <div class="all-info">
+            <div class="frist-slide">
+              <div class="info">
+                <div class="more-info">
+                  <p>connectez-vous et bénéficiez d'avantages exclusifs !</p>
+                  <button type="button">je m'identifie</button>
+                </div>
+                <div class="img">
+                  <img src="./style/image/habillage.webp" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="secend-slid">
+              <img src="./style/image/fliere-m-page-d'accueil-55.png" alt="" />
+            </div>
+          </div>
+          <div class="thired"></div>
+          <div class="slideshow-container" style="float: right; width: 860px; height: 320px;">
+
+            <div class="mySlides fade" style="height: 100%;">
+              <img src="img/Banner Avec CTA copy 2.png" style="width:100%;height:100%;border-radius: 20PX;">
+            </div>
+            
+            <div class="mySlides fade" style="height: 100%;">
+              <img src="img/slider flash sale.png" style="width:100%;border-radius: 20PX;height:100%;">
+            </div>
+            
+            <div class="mySlides fade" style="height: 100%;">
+              <img src="img/jouada-1440x590.png" style="width:100%;border-radius: 20PX;height:100%;">
+            </div>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center;width: 50PX;display: none;">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>
+            
+            <script>
+            let slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+            </script>
+        </div>
+      </div>
+      <div class="product-section">
+        <div class="heder">
+          <h3>courses en ligne</h3>
+          <div class="voir">
+            <a href="#">voir tout</a>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+        </div>
+        <div class="producta">
+          <div class="productes">
+            <div class="image">
+              <img src="./style/image/3.webp" alt="" />
+            </div>
+            <div class="info"><a href="">Produits laitiers,</a></div>
+          </div>
+
+          <div class="productes">
+            <div class="image">
+              <img src="./style/image/3.webp" alt="" />
+            </div>
+            <div class="info"><a href="">Produits laitiers,</a></div>
+          </div>
+          <div class="productes">
+            <div class="image">
+              <img src="./style/image/3.webp" alt="" />
+            </div>
+            <div class="info"><a href="">Produits laitiers,</a></div>
+          </div>
+          <div class="productes">
+            <div class="image">
+              <img src="./style/image/3.webp" alt="" />
+            </div>
+
+            <div class="info"><a href="">Produits laitiers,</a></div>
+          </div>
+          <div class="productes">
+            <div class="image">
+              <img src="./style/image/3.webp" alt="" />
+            </div>
+            <div class="info"><a href="">Produits laitiers,</a></div>
+          </div>
+          <div class="productes">
+            <div class="image">
+              <img src="./style/image/3.webp" alt="" />
+            </div>
+
+            <div class="info"><a href="">Produits laitiers,</a></div>
+          </div>
+          <div class="productes">
+            <div class="image">
+              <img src="./style/image/3.webp" alt="" />
+            </div>
+            <div class="info"><a href="">Produits laitiers,</a></div>
+          </div>
+          <div class="productes">
+            <div class="image">
+              <img src="./style/image/3.webp" alt="" />
+            </div>
+            <div class="info"><a href="">Produits laitiers,</a></div>
+          </div>
+          <div class="productes">
+            <div class="image">
+              <img src="./style/image/3.webp" alt="" />
+            </div>
+            <div class="info"><a href="">Produits laitiers,</a></div>
+          </div>
+          <div class="productes">
+            <div class="image">
+              <img src="./style/image/3.webp" alt="" />
+            </div>
+            <div class="info"><a href="">Produits laitiers,</a></div>
+          </div>
+          <div class="productes">
+            <div class="image">
+              <img src="./style/image/3.webp" alt="" />
+            </div>
+            <div class="info"><a href="">Produits laitiers,</a></div>
+          </div>
+          <div class="productes">
+            <div class="image">
+              <img src="./style/image/3.webp" alt="" />
+            </div>
+            <div class="info"><a href="">Produits laitiers,</a></div>
+          </div>
+          <div class="productes">
+            <div class="image">
+              <img src="./style/image/3.webp" alt="" />
+            </div>
+            <div class="info"><a href="">Produits laitiers,</a></div>
+          </div>
+          <div class="productes">
+            <div class="image">
+              <img src="./style/image/3.webp" alt="" />
+            </div>
+            <div class="info"><a href="">Produits laitiers,</a></div>
+          </div>
+          <div class="productes">
+            <div class="image">
+              <img src="./style/image/3.webp" alt="" />
+            </div>
+            <div class="info"><a href="">Produits laitiers,</a></div>
+          </div>
+        </div>
+        <div class="carde">
+          <div class="secende-card">
+            <img src="./style/image/bannières-dépliant.png" alt="" />
+          </div>
+          <div class="friste-card">
+            <img src="./style/image/marjane-janv-3.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="exclusive">
+        <div class="comtainer-card">
+          <div class="card">
+            <div class="image">
+              <img class="tag" src="./style/image/tag_10.png" alt="" />
+              <img src="./style/image/bayd.webp" alt="" />
+            </div>
+            <button type="button"><i class="fa-solid fa-plus"></i></button>
+            <h4>oeufs frais gros calibre x 30 environ 1,850 Kg - MATINALES</h4>
+            <div class="prix">
+              <div class="maine-prix">
+                <span>55,70dh</span>
+              </div>
+              <div class="cart-marjan">
+                <img src="./style/image/card-marjane.png" alt="" />
+                <span>+5,57 dh</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img class="tag" src="./style/image/tag_10.png" alt="" />
+              <img src="./style/image/nut.webp" alt="" />
+            </div>
+            <button type="button"><i class="fa-solid fa-plus"></i></button>
+            <h4>oeufs frais gros calibre x 30 environ 1,850 Kg - MATINALES</h4>
+            <div class="prix">
+              <div class="maine-prix">
+                <span>55,70dh</span>
+              </div>
+              <div class="cart-marjan">
+                <img src="./style/image/card-marjane.png" alt="" />
+                <span>+5,57 dh</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img class="tag" src="./style/image/tag_10.png" alt="" />
+              <img src="./style/image/bla.webp" alt="" />
+            </div>
+            <button type="button"><i class="fa-solid fa-plus"></i></button>
+            <h4>Essuie tout comfort x1 - SELPAK</h4>
+            <div class="prix">
+              <div class="maine-prix">
+                <span>55,70dh</span>
+              </div>
+              <div class="cart-marjan">
+                <img src="./style/image/card-marjane.png" alt="" />
+                <span>+5,57 dh</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img class="tag" src="./style/image/tag_10.png" alt="" />
+              <img src="./style/image/zit.webp" alt="" />
+            </div>
+            <button type="button"><i class="fa-solid fa-plus"></i></button>
+            <h4>Huile d'olive extra vierge bio 2L - FILIERE M</h4>
+            <div class="prix">
+              <div class="maine-prix">
+                <span>55,70dh</span>
+              </div>
+              <div class="cart-marjan">
+                <img src="./style/image/card-marjane.png" alt="" />
+                <span>+5,57 dh</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="equipement">
+        <!-- heeer -->
+
+        <div class="carde">
+          <div class="secende-card">
+            <img src="./style/image/Découvrez nos promos.png" alt="" />
+          </div>
+          <div class="friste-card">
+            <img src="./style/image/11.png" alt="" />
+          </div>
+        </div>
+        <div class="heder">
+          <h3>Top Promotions</h3>
+          <div class="voir">
+            <a href="#">voir tout</a>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="exclusive">
+        <div class="comtainer-card">
+          <div class="card">
+            <div class="image">
+              <img class="tag" src="./style/image/tag_10.png" alt="" />
+              <img src="./style/image/bahya.webp" alt="" />
+            </div>
+            <button type="button"><i class="fa-solid fa-plus"></i></button>
+            <h4>oeufs frais gros calibre x 30 environ 1,850 Kg - MATINALES</h4>
+            <div class="prix">
+              <div class="maine-prix">
+                <span>55,70dh</span>
+              </div>
+              <div class="cart-marjan">
+                <img src="./style/image/card-marjane.png" alt="" />
+                <span>+5,57 dh</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img class="tag" src="./style/image/tag_10.png" alt="" />
+              <img src="./style/image/fufy.webp" alt="" />
+            </div>
+            <button type="button"><i class="fa-solid fa-plus"></i></button>
+            <h4>oeufs frais gros calibre x 30 environ 1,850 Kg - MATINALES</h4>
+            <div class="prix">
+              <div class="maine-prix">
+                <span>55,70dh</span>
+              </div>
+              <div class="cart-marjan">
+                <img src="./style/image/card-marjane.png" alt="" />
+                <span>+5,57 dh</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img class="tag" src="./style/image/tag_10.png" alt="" />
+              <img src="./style/image/salim.webp" alt="" />
+            </div>
+            <button type="button"><i class="fa-solid fa-plus"></i></button>
+            <h4>Essuie tout comfort x1 - SELPAK</h4>
+            <div class="prix">
+              <div class="maine-prix">
+                <span>55,70dh</span>
+              </div>
+              <div class="cart-marjan">
+                <img src="./style/image/card-marjane.png" alt="" />
+                <span>+5,57 dh</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img class="tag" src="./style/image/tag_10.png" alt="" />
+              <img src="./style/image/sara.webp" alt="" />
+            </div>
+            <button type="button"><i class="fa-solid fa-plus"></i></button>
+            <h4>Huile d'olive extra vierge bio 2L - FILIERE M</h4>
+            <div class="prix">
+              <div class="maine-prix">
+                <span>55,70dh</span>
+              </div>
+              <div class="cart-marjan">
+                <img src="./style/image/card-marjane.png" alt="" />
+                <span>+5,57 dh</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="equipement">
+        <div class="carde">
+          <div class="secende-card">
+            <img src="./style/image/10-ar-v3.png" alt="" />
+          </div>
+          <div class="friste-card">
+            <img src="./style/image/20-fr.png" alt="" />
+          </div>
+        </div>
+        <div class="heder">
+          <h3>Fruits de saison</h3>
+          <div class="voir">
+            <a href="#">voir tout</a>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="exclusive">
+        <div class="comtainer-card">
+          <div class="card">
+            <div class="image">
+              <img class="tag" src="./style/image/tag_10.png" alt="" />
+              <img src="./style/image/xahdiya.webp" alt="" />
+            </div>
+            <button type="button"><i class="fa-solid fa-plus"></i></button>
+            <h4>oeufs frais gros calibre x 30 environ 1,850 Kg - MATINALES</h4>
+            <div class="prix">
+              <div class="maine-prix">
+                <span>55,70dh</span>
+              </div>
+              <div class="cart-marjan">
+                <img src="./style/image/card-marjane.png" alt="" />
+                <span>+5,57 dh</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img class="tag" src="./style/image/tag_10.png" alt="" />
+              <img src="./style/image/green.webp" alt="" />
+            </div>
+            <button type="button"><i class="fa-solid fa-plus"></i></button>
+            <h4>oeufs frais gros calibre x 30 environ 1,850 Kg - MATINALES</h4>
+            <div class="prix">
+              <div class="maine-prix">
+                <span>55,70dh</span>
+              </div>
+              <div class="cart-marjan">
+                <img src="./style/image/card-marjane.png" alt="" />
+                <span>+5,57 dh</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img class="tag" src="./style/image/tag_10.png" alt="" />
+              <img src="./style/image/pamp.webp" alt="" />
+            </div>
+            <button type="button"><i class="fa-solid fa-plus"></i></button>
+            <h4>Essuie tout comfort x1 - SELPAK</h4>
+            <div class="prix">
+              <div class="maine-prix">
+                <span>55,70dh</span>
+              </div>
+              <div class="cart-marjan">
+                <img src="./style/image/card-marjane.png" alt="" />
+                <span>+5,57 dh</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img class="tag" src="./style/image/tag_10.png" alt="" />
+              <img src="./style/image/red.webp" alt="" />
+            </div>
+            <button type="button"><i class="fa-solid fa-plus"></i></button>
+            <h4>Huile d'olive extra vierge bio 2L - FILIERE M</h4>
+            <div class="prix">
+              <div class="maine-prix">
+                <span>55,70dh</span>
+              </div>
+              <div class="cart-marjan">
+                <img src="./style/image/card-marjane.png" alt="" />
+                <span>+5,57 dh</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="maile-li">
+          <h3>information legales</h3>
+          <ul>
+            <li><a href="">engagements marjane</a></li>
+            <li><a href="">cgu & cgv</a></li>
+            <li><a href="">information legales</a></li>
+          </ul>
+        </div>
+        <div class="maile-li">
+          <h3>a propos</h3>
+          <ul>
+            <li><a href="">marjan group</a></li>
+            <li><a href="">recructement</a></li>
+            <li><a href="">fidelite</a></li>
+            <li><a href="">sav</a></li>
+          </ul>
+        </div>
+        <div class="maile-li">
+          <h3>besoin d'aide ?</h3>
+          <ul>
+            <li><a href="">nous contacter</a></li>
+          </ul>
+        </div>
+        <div class="maile-li">
+          <h3>Téléchargez notre appli</h3>
+          <p>
+            Avec l'application Marjane, vous pouvez faire vos achats encore plus
+            rapidement.
+          </p>
+          <ul class="social">
+            <li><i class="fa-brands fa-apple"></i></li>
+            <li><i class="fa-brands fa-google-play"></i></li>
+          </ul>
+          <ul class="social-1">
+            <h3>marjane</h3>
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-square-instagram"></i></li>
+            <li><i class="fa-brands fa-linkedin"></i></li>
+            <li><i class="fa-brands fa-youtube"></i></li>
+          </ul>
+          <ul class="social-1">
+            <h3>Marjane Market</h3>
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-square-instagram"></i></li>
+            <li><i class="fa-brands fa-linkedin"></i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
